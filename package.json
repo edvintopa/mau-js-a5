@@ -1,0 +1,23 @@
+{
+  "name": "mau-js-a5",
+  "version": "1.0.0",
+  "description": "- Skönt o skriva i - 10 / 10",
+  "homepage": "https://github.com/edvintopa/mau-js-a5#readme",
+  "bugs": {
+    "url": "https://github.com/edvintopa/mau-js-a5/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edvintopa/mau-js-a5.git"
+  },
+  "license": "MIT",
+  "author": "Edvin Topalovic",
+  "type": "commonjs",
+  "main": "src/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "jest tests"
+  }
+}
