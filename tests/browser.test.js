@@ -49,6 +49,7 @@ describe('[CUSTOM TEST] Clicking pusha till stacken two times, pop once and peek
 
         let pop = await driver.findElement(By.id('pop'));
         await pop.click();
+        await alert.accept();
 
         let peek = await driver.findElement(By.id('peek'));
         await peek.click();
