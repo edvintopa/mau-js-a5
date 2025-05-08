@@ -32,3 +32,28 @@ describe('Clicking "Pusha till stacken"', () => {
         await alert.accept();
     });
 });
+
+describe('[CUSTOM TEST] Clicking pusha till stacken two times, pop once and peek', () => {
+    it('should work', async () => {
+        let push = await driver.findElement(By.id('push'));
+        await push.click();
+        let alert = await driver.switchTo().alert();
+        await alert.sendKeys("yooo");
+        await alert.accept();
+
+        push = await driver.findElement(By.id('push'));
+        await push.click();
+        alert = await driver.switchTo().alert();
+        await alert.sendKeys("777");
+        await alert.accept();
+
+        let pop = await driver.findElement(By.id('pop'));
+        await pop.click();
+
+        let peek = await driver.findElement(By.id('peek'));
+        await peek.click();
+
+        let stack = await driver.findElement(By.id('top_of_stack')).getText();
+        expect(stack).toEqual("yooo");
+    })
+});
