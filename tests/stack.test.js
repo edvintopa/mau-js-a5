@@ -25,5 +25,5 @@ test('[CUSTOM TEST] peek stack with two elements return after popping thrid', ()
 
     stack.pop();
     expect(stack.peek()).toBeDefined();
-    expect(stack.peek()).toBe("woww");
+    expect(stack.peek()).toBe("wow");
 });
